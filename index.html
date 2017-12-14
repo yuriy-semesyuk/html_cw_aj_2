@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AJAX Sample</title>
+</head>
+<body>
+    
+    <h1>Client Data</h1>
+    <p>Page loaded: <span id="loaded"></span></p>
+    
+    <p>Client name: <span id="client-name"></span></p>
+    <p>Client age: <span id="client-age"></span></p>
+    
+    <button id="get-client-data">Get Client Data</button>
+    
+    <div id="greet"></div>
+    
+    <button id="show-greet">Show greetings</button>
+    
+    <h2>Feedback</h2>
+    <form id="contact-form">
+        <label>Your name:
+            <input type="text" id="name">
+        </label>
+        <br>
+        <label>Your email:
+            <input type="email" id="email">
+        </label>
+        <br>
+        <label>Your feedback:
+            <textarea id="feedback"></textarea>
+        </label>
+        <br>
+        <input type="submit">
+    </form>
+    
+    <dialog id="thank-dialog">
+        <p>Thank you for contacting us!</p>
+    </dialog>
+    
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous"></script>
+    <script src="js/get-client.js"></script>
+    <script src="js/feedback-form.js"></script>
+</body>
+</html>
